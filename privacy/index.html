@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booblyc TD - Privacy Policy (Web)</title>
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --panel: #ffffff;
+    --text: #201d19;
+    --text-dim: #55504a;
+    --accent: #b5482a;
+    --accent-soft: #f1e2da;
+    --border: #e6e0d8;
+    --code-bg: #f0ece4;
+    --link: #a8431f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16140f;
+      --panel: #201c16;
+      --text: #ede7dc;
+      --text-dim: #b6ac9c;
+      --accent: #e08a5f;
+      --accent-soft: #33251b;
+      --border: #37312a;
+      --code-bg: #2a251d;
+      --link: #f0a373;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 16px 80px;
+  }
+  header.top {
+    margin-bottom: 28px;
+  }
+  .kicker {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 1.25;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 15px;
+    margin: 0;
+  }
+  .meta-box {
+    margin-top: 20px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 14px;
+    color: var(--text-dim);
+  }
+  .meta-box strong { color: var(--text); }
+  .meta-box a { color: var(--link); }
+  nav.toc {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 24px 0 8px;
+    font-size: 14px;
+  }
+  nav.toc div.toc-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 12px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    -webkit-columns: 2;
+  }
+  @media (max-width: 520px) {
+    nav.toc ol { columns: 1; -webkit-columns: 1; }
+  }
+  nav.toc li { margin: 4px 0; break-inside: avoid; }
+  nav.toc a { color: var(--text); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+
+  section {
+    margin-top: 34px;
+    scroll-margin-top: 16px;
+  }
+  h2 {
+    font-size: 19px;
+    margin: 0 0 10px;
+    padding-top: 4px;
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+  }
+  h3 {
+    font-size: 15px;
+    margin: 18px 0 6px;
+    color: var(--text);
+  }
+  p { margin: 10px 0; }
+  ul, ol.plain { margin: 10px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--link); }
+  code {
+    background: var(--code-bg);
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    word-break: break-all;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin: 12px 0;
+  }
+  .card h4 {
+    margin: 0 0 6px;
+    font-size: 14px;
+  }
+  .card p { margin: 4px 0; font-size: 14px; color: var(--text-dim); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { color: var(--text-dim); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .03em; }
+  .pill {
+    display: inline-block;
+    font-size: 12px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 999px;
+    padding: 2px 9px;
+    margin-right: 6px;
+  }
+  .no {
+    color: var(--text-dim);
+  }
+  .no::before { content: "\2715  "; opacity: .6; }
+  .yes::before { content: "\2713  "; opacity: .7; color: var(--accent); }
+  footer {
+    margin-top: 50px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+  .backtop {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <span class="kicker">Web / Browser Version</span>
+    <h1>Booblyc TD — Privacy Policy</h1>
+    <p class="subtitle">Covers only the browser (HTML5) version of Booblyc TD, played on game portals such as Playgama, CrazyGames, Poki, GameDistribution or MSN. The Android/iOS app versions are covered by a separate policy.</p>
+    <div class="meta-box">
+      <strong>Effective date:</strong> September 24, 2026<br>
+      <strong>Developer:</strong> Fedir Danylov, an individual developer publishing games under the name <strong>Booblyc</strong> (not a registered company)<br>
+      <strong>Contact:</strong> <a href="mailto:booblyc.support@gmail.com">booblyc.support@gmail.com</a>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <div class="toc-title">On this page</div>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-we-store">What data is stored</a></li>
+      <li><a href="#portal">The hosting portal &amp; Playgama Bridge</a></li>
+      <li><a href="#promo">Promo codes</a></li>
+      <li><a href="#purchases">Purchases</a></li>
+      <li><a href="#not-collected">What we do <em>not</em> collect</a></li>
+      <li><a href="#cookies">Cookies &amp; local storage</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#rights">Your rights (GDPR / UK GDPR / CCPA)</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#delete">How to delete your data</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2>1. Overview</h2>
+    <p>Booblyc TD is a tower-defense game, the sequel to the "Incursion" series. This page covers the <strong>browser (HTML5) version</strong>, which you play directly on a game portal's website — it is not downloaded from an app store and does not create an account with us.</p>
+    <p>Booblyc is a small independent game team without a registered company; the person responsible for this game and for this policy is Fedir Danylov.</p>
+    <p>The short version: the game itself collects almost nothing. Your save data lives in your browser and, if you choose to sync it, in the portal's cloud storage. Ads and payments are entirely run by the website you're playing on, using a shared plugin called Playgama Bridge — I never see your payment details, and the game does not run any tracking or analytics SDKs of its own on the web.</p>
+  </section>
+
+  <section id="data-we-store">
+    <h2>2. What data is stored, and where</h2>
+
+    <div class="card">
+      <h4>Game save (local)</h4>
+      <p>Your progress — levels completed, cards, gems, settings — is saved as a file in your browser's own local storage for the game's page, the same way any browser game keeps your progress between visits. It never leaves your device unless cloud sync (below) is available and enabled by the portal.</p>
+    </div>
+
+    <div class="card">
+      <h4>Game save (cloud copy, via the portal)</h4>
+      <p>If the portal you're playing on supports cloud storage, a copy of your save file is uploaded to that portal's storage a few seconds after you save, under one fixed key. At the next launch, if that cloud copy is more advanced than what's on your device, it replaces your local save. This lets your progress follow you if you play the same game on the same portal from a different browser or device, as long as the portal recognizes you (e.g. because you're logged into the portal).</p>
+      <p>This save data is game state only — cards, levels, in-game currency, settings. It is not an account profile, and it does not knowingly include your name, email, or other personal details.</p>
+    </div>
+
+    <div class="card">
+      <h4>Anonymous player ID</h4>
+      <p>The game generates a random 16-character ID (not tied to your name, email, device ID, or any account) and stores it in your save file. It is used only if you redeem a promo code — see <a href="#promo">Promo codes</a> — to prevent the same code being reused, and otherwise only travels inside your save file (including the portal's cloud copy described above).</p>
+    </div>
+
+    <div class="card">
+      <h4>Downloaded game files (cache)</h4>
+      <p>The game downloads its art, sound and level files in stages as you play, and your browser caches them so a returning visit doesn't re-download everything. This is a technical cache of game assets, not personal data, and is cleared the same way as any other browser cache.</p>
+    </div>
+  </section>
+
+  <section id="portal">
+    <h2>3. The hosting portal &amp; Playgama Bridge</h2>
+    <p>The game loads one shared plugin, <strong>Playgama Bridge</strong>, which in turn connects to the actual website you're playing on (for example Playgama itself, CrazyGames, Poki, GameDistribution, MSN, or another site in that network). Through this bridge, the <strong>portal</strong> — not the game, and not me as the developer — handles:</p>
+    <ul>
+      <li><strong>Advertising</strong> — which ads are shown, to whom, and any ad-related tracking or personalization. This follows the portal's own ad policy and consent settings, not the game's.</li>
+      <li><strong>Payments</strong> — processing any in-game purchase you make. The game only ever receives a product ID and an order ID confirming what you bought; it never sees your card number, billing address, or other payment details.</li>
+      <li><strong>Cloud save storage</strong> — described above.</li>
+      <li><strong>Basic session info</strong> — your rough platform/language settings, and simple "game loaded / level completed / level failed" signals the game sends the portal for its own ranking and store-listing purposes. These do not carry any player identifier.</li>
+    </ul>
+    <p>Because the exact portal depends on where you're playing, please also check <strong>the privacy policy of the website where you play the game</strong> (usually linked in its footer). A few portals' policies, where I could confirm a working link:</p>
+    <ul>
+      <li>Playgama — <a href="https://playgama.com/confidential" target="_blank" rel="noopener">playgama.com/confidential</a></li>
+      <li>CrazyGames — <a href="https://www.crazygames.com/privacy-policy" target="_blank" rel="noopener">crazygames.com/privacy-policy</a></li>
+      <li>GameDistribution — <a href="https://static.gamedistribution.com/policy/privacy-enduser.html" target="_blank" rel="noopener">static.gamedistribution.com/policy/privacy-enduser.html</a></li>
+      <li>MSN / Microsoft — <a href="https://www.microsoft.com/en-us/privacy/privacystatement" target="_blank" rel="noopener">microsoft.com/en-us/privacy/privacystatement</a></li>
+      <li>Poki, and any other site not listed above — see the privacy policy linked in the footer of that website.</li>
+    </ul>
+  </section>
+
+  <section id="promo">
+    <h2>4. Promo codes</h2>
+    <p>If you choose to type a promo code into the game, the code you entered and your anonymous player ID (see above) are sent to a small backend script I run (hosted on Google Apps Script) that checks the code and marks it as used. This only happens when you actively enter a code — never automatically. Like any web request, the script's host inherently sees the IP address the request came from; the game itself does not send your IP, device, or account information beyond the code and the anonymous ID.</p>
+  </section>
+
+  <section id="purchases">
+    <h2>5. Purchases</h2>
+    <p>All in-game purchases on the web version are handled by the portal's own payment provider through Playgama Bridge, using whatever payment methods that portal supports. I never see or store your card details or billing information — only a confirmation that an order was made (an order ID and the product you bought), so the game can grant it. Refunds, billing questions and payment-method changes need to go through the portal or its payment provider, not through me.</p>
+  </section>
+
+  <section id="not-collected">
+    <h2>6. What we do <em>not</em> collect on the web version</h2>
+    <p>Several tracking and analytics services exist in the mobile app version of this game but are deliberately switched off in the browser version — they don't load, and they don't send anything:</p>
+    <table>
+      <tr><th>Service</th><th>Status on web</th></tr>
+      <tr><td>GameAnalytics</td><td class="no">Not loaded</td></tr>
+      <tr><td>Firebase / Google Analytics</td><td class="no">Not loaded</td></tr>
+      <tr><td>AdMob and other mobile ad SDKs</td><td class="no">Not loaded (ads come from the portal instead)</td></tr>
+      <tr><td>Google Play Games Services (cloud save/achievements)</td><td class="no">Not loaded (mobile-only)</td></tr>
+      <tr><td>Facebook SDK</td><td class="no">Not loaded</td></tr>
+      <tr><td>Push / local notifications</td><td class="no">Not available in a browser tab</td></tr>
+    </table>
+    <p>The browser version does not ask for your name, email address, real identity, precise location, contacts, microphone, camera, or any device permissions beyond what your browser already grants any website.</p>
+  </section>
+
+  <section id="cookies">
+    <h2>7. Cookies &amp; local storage</h2>
+    <p>The game itself does not set tracking cookies. It uses your browser's local storage to keep your save file and cached game files, as described above. The website hosting the game (the portal) may set its own cookies for login, preferences, ads or analytics — that is covered by the portal's own privacy/cookie policy, not this one.</p>
+  </section>
+
+  <section id="children">
+    <h2>8. Children's privacy</h2>
+    <p>Booblyc TD is a general-audience game, and some of the portals that host it have audiences that include children. The game itself does not knowingly collect personal information from anyone, including children — it does not ask for a name, email, birthdate or any account details. Ads shown while playing are selected and served by the hosting portal, following that portal's own rules for child-directed advertising (for example, non-personalized ads where required by law). If you believe a child has provided personal information through this game in a way that concerns you, please contact us using the email below and we will help however we can.</p>
+  </section>
+
+  <section id="rights">
+    <h2>9. Your rights (GDPR, UK GDPR, CCPA and similar laws)</h2>
+    <p>Depending on where you live, you may have rights over the limited data described in this policy — mainly your save data and the anonymous player ID. In plain terms, you can ask to:</p>
+    <ul>
+      <li><strong>Know</strong> what's stored — this page already describes it in full; there's no hidden profile beyond your save file.</li>
+      <li><strong>Delete</strong> it — see <a href="#delete">How to delete your data</a> below.</li>
+      <li><strong>Object or withdraw</strong> — since nothing here is used for profiling or targeted advertising by me directly, this mainly means simply not using the cloud-save or promo-code features.</li>
+      <li><strong>Not be discriminated against</strong> for exercising any of these rights (relevant under CCPA/CPRA) — the game works the same whether or not you use cloud save or promo codes.</li>
+    </ul>
+    <p>Because the game keeps no account and no contact information tied to your save data, I generally cannot look up "your" data from a name or email — data requests are handled by clearing your local browser storage and/or the portal deleting its stored copy, as described below. For anything ads- or payments-related, those rights are best exercised with the portal directly, since that data lives with them, not with me.</p>
+  </section>
+
+  <section id="retention">
+    <h2>10. Data retention</h2>
+    <ul>
+      <li><strong>Local save &amp; cache:</strong> kept in your browser until you clear it, uninstall/reset the browser, or it's cleared automatically by the browser (e.g. low storage).</li>
+      <li><strong>Cloud save copy:</strong> kept by the portal for as long as your portal account (or equivalent) exists, or until overwritten by a newer save, or deleted per the portal's own retention policy.</li>
+      <li><strong>Promo code requests:</strong> the backend keeps the codes themselves and, for single-use codes, a note that a code was used and by which anonymous player ID.</li>
+    </ul>
+  </section>
+
+  <section id="delete">
+    <h2>11. How to delete your data</h2>
+    <ol class="plain">
+      <li><strong>Local save:</strong> use your browser's "Clear site data" / "Clear browsing data" for the portal's site (or just this game's page, if your browser allows per-site clearing). This removes your local save and cached game files instantly — note this also resets your local progress.</li>
+      <li><strong>Cloud save copy:</strong> if the portal offers account/data deletion tools, those will remove the stored copy. Otherwise, contact us at the email below and we'll help you get it removed, or contact the portal directly.</li>
+      <li><strong>Anything else:</strong> email <a href="mailto:booblyc.support@gmail.com">booblyc.support@gmail.com</a> and describe what you'd like removed — we'll respond as soon as we can.</li>
+    </ol>
+  </section>
+
+  <section id="changes">
+    <h2>12. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted here with a new effective date at the top. Since the game keeps no contact list, we can't email you about changes directly — please check back occasionally if you'd like to stay informed.</p>
+  </section>
+
+  <section id="contact">
+    <h2>13. Contact</h2>
+    <p>Questions, requests, or concerns about privacy in Booblyc TD (web version)? Reach out any time:</p>
+    <p style="font-size:18px;"><a href="mailto:booblyc.support@gmail.com">booblyc.support@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>Booblyc TD — Privacy Policy (Web/Browser version). Effective September 24, 2026.</p>
+    <a class="backtop" href="#overview">Back to top ↑</a>
+  </footer>
+
+</div>
+</body>
+</html>
